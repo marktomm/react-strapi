@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!axios)/'",
     "eject": "react-scripts eject"
   },
   "keywords": [],
@@ -32,6 +32,8 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
     "puppeteer": "^19.8.5"
   }
 }

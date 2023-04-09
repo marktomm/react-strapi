@@ -36,7 +36,10 @@ const Component = () => {
       <h2>Data:</h2>
       <ul>
         {data.map((item, index) => (
-          <li key={index}>{item.name}</li>
+         <li key={index}>                                                                                             
+            {item.name}                                                                                                
+            {item.completed === false && <span> - Completed: No</span>}                                                
+          </li>    
         ))}
       </ul>
     </div>
