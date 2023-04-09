@@ -5,8 +5,13 @@ to explain:
 ```
 react-scripts test --transformIgnorePatterns 'node_modules/(?!axios)/'
 ```
+to render using puppeteer:
 
-System 1 that was only used to run puppeteer:
+```bash
+node fetchRenderedHtml.js
+```
+
+Node and npm that was only used to run puppeteer code and all tests:
 
 [mark@mark react-strapi]$ node -v                                                              
 v19.6.0
