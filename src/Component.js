@@ -11,7 +11,7 @@ const Component = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api.example.com/data');
+        const response = await axios.get('http://127.0.0.1:1337/type');
         setData(response.data);
         setIsLoading(false);
       } catch (err) {
@@ -35,12 +35,13 @@ const Component = () => {
     <div>
       <h2>Data:</h2>
       <ul>
-        {data.map((item, index) => (
-         <li key={index}>                                                                                             
-            {item.name}                                                                                                
-            {item.completed === false && <span> - Completed: No</span>}                                                
-          </li>    
-        ))}
+        {/* {data.map((item, index) => (
+          <li key={index}>
+            {item.name}
+            {item.completed === false && <span> - Completed: No</span>}
+          </li>
+        ))} */}
+        <li>item: {data.TypeCompTest.ttext}</li>
       </ul>
     </div>
   );
